@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Odin Project - Sign-Up form</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class="side-bar">
+            <header>
+                <img class="logo" src="img/Premium-Vector-_-Atlas-god-premium-logo-design.svg"
+                    alt="Atlas segurando o mundo">
+                <h1>Atlas Academia</h1>
+            </header>
+        </div>
+        <div class="form">
+            <div class="infor">
+                <p>Just a site to improve my abilities with forms.</p>
+                <p class="intro">Welcome to the Atlas academia!</p>
+                <p class="create-para">Create a account and start to improve yourself.</p>
+            </div>
+            <section class="form-sect">
+                <form action="#" method="post">
+                    <fieldset class="name-field">
+                        <section class="name">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" required>
+                        </section>
+                        <section class="last-name-section">
+                            <label for="last-name">Last name</label>
+                            <input type="text" id="last-name" required>
+                        </section>
+                    </fieldset>
+                    <fieldset class="email-field">
+                        <section>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" required>
+                        </section>
+                        <section>
+                            <label for="phone">Phone number</label>
+                            <input type="tel" name="phone" id="phone" autocomplete="tel"
+                                pattern="^\(\d{2}\)\s\d{4,5}\d{4,5}$" placeholder="(xx) xxxx-xxxx" required>
+                        </section>
+                    </fieldset>
+                    <fieldset class="password-field">
+                        <section>
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" minlength="8" maxlength="16" required onchange="validarSenha()">
+                            <span class="error"></span>
+                        </section>
+                        <section>
+                            <label for="password">Comfirm password</label>
+                            <input type="password" name="com-password" id="com-password" minlength="8" maxlength="16" required onchange="validarSenha()">
+                            <span class="error"></span>
+                        </section>
+                    </fieldset>
+                
+                    <div class="submit-sec">
+                        <button class="sub-btn" type="submit">Create account</button>
+                        <p>Already have a account? <a href="">Log in</a></p>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
