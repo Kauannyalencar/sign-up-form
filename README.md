@@ -5,6 +5,7 @@
 <h3>Build with</h3>
 <ul>
   <li>HMTL5</li>
-  <li>CSS#</li>
+  <li>CSS3</li>
   <li>JavaScript</li>
 </ul>
+<a href="">Live</a>
